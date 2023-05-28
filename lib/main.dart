@@ -26,39 +26,31 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
         child: Scaffold(
+      backgroundColor: Colors.grey[100],
       body: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 16),
+        padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 8),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Container(
-                  width: 50,
-                  height: 50,
+                  padding: const EdgeInsets.all(16.0),
                   decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Colors.grey[200],
                     boxShadow: const [
                       BoxShadow(
-                        color: Colors.white,
-                        offset: Offset(-15, -15),
-                        blurRadius: 20,
-                        // spreadRadius: 100,
-                      ),
-                      BoxShadow(
                         color: Colors.grey,
+                        blurRadius: 25,
                         offset: Offset(15, 15),
-                        blurRadius: 20,
-                        //spreadRadius: 100,
                       ),
                     ],
-                    color: Colors.grey[300],
-                    //borderRadius: BorderRadius.circular(25),
-                    shape: BoxShape.circle,
                   ),
-                  child: Icon(
-                    Icons.arrow_back,
-                    color: Colors.grey[500],
+                  child: const Icon(
+                    Icons.save_as_rounded,
+                    color: Colors.grey,
                   ),
                 ),
                 Container(
@@ -141,7 +133,11 @@ class Home extends StatelessWidget {
                 const SizedBox(
                   height: 8,
                 ),
-                Slider(value: 0.3, onChanged: (value) {}),
+                Slider(
+                  value: 0.3,
+                  onChanged: (value) {},
+                  activeColor: Color(0xff71a3ff),
+                ),
               ],
             ),
             Padding(
