@@ -149,7 +149,7 @@ class Home extends StatelessWidget {
                         ],
                       ),
                       Container(
-                        padding: EdgeInsets.all(8.0),
+                        padding: const EdgeInsets.all(8.0),
                         decoration: BoxDecoration(
                             boxShadow: const [
                               BoxShadow(
@@ -205,7 +205,7 @@ class Home extends StatelessWidget {
                         ],
                       ),
                       Container(
-                        padding: EdgeInsets.all(8.0),
+                        padding: const EdgeInsets.all(8.0),
                         decoration: BoxDecoration(
                             boxShadow: const [
                               BoxShadow(

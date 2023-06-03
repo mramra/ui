@@ -136,7 +136,7 @@ class Home extends StatelessWidget {
                 Slider(
                   value: 0.3,
                   onChanged: (value) {},
-                  activeColor: Color(0xff71a3ff),
+                  activeColor: const Color(0xff71a3ff),
                 ),
               ],
             ),
